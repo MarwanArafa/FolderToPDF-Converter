@@ -1,4 +1,23 @@
-Image to PDF ConverterA robust Python script that automatically merges all images in its current directory into a single PDF file. It features natural sorting (e.g., sorting 2.png before 10.png) and automatically names the output PDF based on the folder name.FeaturesSmart Sorting: Uses "natural sort" algorithms to ensure pages are ordered correctly (e.g., Page 1, Page 2, Page 10) rather than standard computer sorting (Page 1, Page 10, Page 2).Auto-Naming: The resulting PDF is automatically named after the folder containing the images.Format Support: Supports .jpg, .jpeg, .png, .tiff, and .bmp.Transparency Handling: Automatically converts images to RGB to prevent errors with transparent PNGs.PrerequisitesBefore running this script, you need to have Python installed on your system.1. Install PythonIf you don't have Python installed, download it from python.org.2. Install Required LibraryThis script relies on the Pillow library for image processing.Open your terminal or command prompt and run:pip install Pillow
-How to UsePlace the Script: Move the image_to_pdf.py file into the folder containing the images you want to convert.Run the Script:Windows: Double-click the file (if .py is associated with Python) or run via command prompt:python image_to_pdf.py
-Mac/Linux: Open your terminal, navigate to the folder, and run:python3 image_to_pdf.py
-Check Output: A new PDF file will appear in the same folder, named after the folder itself (e.g., if your folder is named MyComic, the file will be MyComic.pdf).Troubleshooting"No images found": Ensure your images end with standard extensions like .jpg or .png."Module not found": Make sure you ran pip install Pillow successfully.
+# Folder to PDF Converter
+
+A simple, robust Python script that automatically merges all images in the current directory into a single PDF file. The output PDF is named after the folder containing the images.
+
+## Features
+
+* **Natural Sorting:** Intelligently sorts filenames containing numbers (e.g., sorts `page2.png` before `page10.png` rather than after).
+* **Auto-Naming:** Automatically names the output PDF based on the folder name.
+* **Format Handling:** Converts images to RGB to ensure compatibility and handles common formats (`.jpg`, `.png`, `.bmp`, etc.).
+* **Portable:** Works as a standalone script or can be compiled into an executable.
+
+## Prerequisites
+
+You need Python installed on your system.
+
+### ⚠️ Installation (Important)
+
+This script relies on the **Pillow** library for image processing. You must install it before running the script.
+
+Open your terminal or command prompt and run:
+
+```bash
+pip install Pillow

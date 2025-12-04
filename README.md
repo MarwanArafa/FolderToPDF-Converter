@@ -1,23 +1,72 @@
-# Folder to PDF Converter
+# 📑 Image to PDF Converter
 
-A simple, robust Python script that automatically merges all images in the current directory into a single PDF file. The output PDF is named after the folder containing the images.
+A lightweight, robust tool to automatically merge a folder of images into a single, high-quality PDF file. 🚀
 
-## Features
+## ✨ Features
 
-* **Natural Sorting:** Intelligently sorts filenames containing numbers (e.g., sorts `page2.png` before `page10.png` rather than after).
-* **Auto-Naming:** Automatically names the output PDF based on the folder name.
-* **Format Handling:** Converts images to RGB to ensure compatibility and handles common formats (`.jpg`, `.png`, `.bmp`, etc.).
-* **Portable:** Works as a standalone script or can be compiled into an executable.
+* **🔢 Natural Sorting:** Smartly handles page numbers (e.g., sorts `Page 2` before `Page 10`).
+* **📂 Auto-Organization:** Automatically names the output PDF based on the parent folder name.
+* **🖼️ Multi-Format Support:** Compatible with JPG, PNG, BMP, TIFF, and more.
+* **⚡ Fast & Efficient:** Converts files instantly with memory-safe processing.
 
-## Prerequisites
+---
 
-You need Python installed on your system.
+## 🛠️ Prerequisites
 
-### ⚠️ Installation (Important)
+Before running the tool, ensure you have the following ready:
 
-This script relies on the **Pillow** library for image processing. You must install it before running the script.
+* **Python 3.x** installed on your system.
+* **Pillow (PIL)** library for image processing.
 
-Open your terminal or command prompt and run:
+---
 
-```bash
-pip install Pillow
+## ⚙️ Installation
+
+1.  Open your terminal or command prompt (cmd).
+2.  Install the required image library by running:
+
+    ```bash
+    pip install Pillow
+    ```
+
+---
+
+## 🚀 How to Use
+
+Follow these simple steps to create your PDF:
+
+1.  **📍 Place the Script**
+    Copy the `image_to_pdf.py` file into the folder containing your images.
+
+2.  **🏃 Run the Converter**
+    Open your terminal in that folder and run:
+    ```bash
+    python image_to_pdf.py
+    ```
+
+3.  **✅ Done!**
+    The script will detect your images, sort them, and generate a PDF file named after the folder (e.g., `MyChapter.pdf`).
+
+---
+
+## 📄 Supported Formats
+
+The tool automatically detects the following file types:
+* ✅ `.jpg` / `.jpeg`
+* ✅ `.png`
+* ✅ `.bmp`
+* ✅ `.tiff`
+
+---
+
+## ❓ Troubleshooting
+
+| Error Message | Solution |
+| :--- | :--- |
+| `ModuleNotFoundError: No module named 'PIL'` | You forgot to install Pillow. Run `pip install Pillow`. |
+| `No images found` | Make sure the `.py` file is inside the **same folder** as your images. |
+| `Permission denied` | Close any open files and try running the script as Administrator. |
+
+---
+
+*Made with ❤️ and Python.*

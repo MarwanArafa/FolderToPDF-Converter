@@ -1,4 +1,4 @@
-# 📑 Folder to PDF Converter
+# 📑 Image to PDF Converter
 
 A lightweight, robust tool to automatically merge a folder of images into a single, high-quality PDF file. 🚀
 
